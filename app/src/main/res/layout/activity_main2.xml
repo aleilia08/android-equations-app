@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity2">
+
+    <EditText
+        android:id="@+id/coefficient_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter coefficient a"
+        android:inputType="numberDecimal|numberSigned"/>
+    <EditText
+        android:id="@+id/coefficient_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter coefficient b"
+        android:inputType="numberDecimal|numberSigned"/>
+    <EditText
+        android:id="@+id/coefficient_c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter coefficient c"
+        android:inputType="numberDecimal|numberSigned"/>
+    <EditText
+        android:id="@+id/coefficient_d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter coefficient d"
+        android:inputType="numberDecimal|numberSigned"/>
+
+    <Button
+        android:id="@+id/solve_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Solve"/>
+
+    <TextView
+        android:id="@+id/solution_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="Solution will appear here"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="126dp"
+        app:srcCompat="@drawable/cubic_equation" />
+
+    <TextView
+        android:id="@+id/instruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="Learn here!"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/open_wiki_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Learn more about Cubic Equations" />
+
+    <Button
+        android:id="@+id/help_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help"
+        android:layout_below="@id/solve_button"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_below="@id/solve_button"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/view_saved_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Saved Equations"
+        android:layout_below="@id/save_button"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+</LinearLayout>
